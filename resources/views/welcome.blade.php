@@ -81,6 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
+                
                 @if(Auth::check())
                 
                 hi,{{Auth::user()->name}}
@@ -101,6 +102,9 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+             <!--using cross xite request forgery-->
+        @csrf
         </div>
+       
     </body>
 </html>
