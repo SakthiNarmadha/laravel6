@@ -4,8 +4,10 @@ namespace App;
 
 class Example
 {
-    public  function go()
+    protected $foo;
+    //using constructor with arguments 
+    public  function _construct($foo)
     {
-        dump('it works!');
+        $this->foo=$foo;
     }
 }
