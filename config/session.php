@@ -17,8 +17,9 @@ return [
     |            "memcached", "redis", "dynamodb", "array"
     |
     */
-
-    'driver' => env('SESSION_DRIVER', 'cookie'),
+      //which means our session data will be
+      // returned to the file and our project
+    'driver' => env('SESSION_DRIVER', 'file'),
 
     /*
     |--------------------------------------------------------------------------

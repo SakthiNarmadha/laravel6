@@ -88,6 +88,10 @@
                 @else
                     Laravel
                 @endif
+                <!--flash message-->
+                @if(section('message'))
+                <p>{{session('message')}}</p>
+                @endif
                
                 </div>
 
